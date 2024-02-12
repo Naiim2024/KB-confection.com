@@ -1,0 +1,1141 @@
+                                            @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                font-family: 'Rubik', sans-serif;
+                                            }
+                                            
+                                            a {
+                                                text-decoration: 0;
+                                                font-size: 13px;
+                                            }
+                                            /*Scrollbar CSS**/
+                                            
+                                             ::-webkit-scrollbar {
+                                                width: 8px;
+                                            }
+                                            
+                                             ::-webkit-scrollbar-thumb {
+                                                background-color: #4f4f4f;
+                                                border-radius: 30px;
+                                            }
+                                            
+                                            header {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                padding: 10px 5%;
+                                                background-color: rgb(255, 255, 255);
+                                                top: 0;
+                                                /* Placez-le tout en haut */
+                                                left: 0;
+                                                width: 100%;
+                                                height: 60px;
+                                                background-color: #bbbbbb;
+                                            }
+                                            
+                                            .logo {
+                                                display: flex;
+                                                align-items: center;
+                                                padding-left: 0px;
+                                            }
+                                            
+                                            .logo img {
+                                                width: 70px;
+                                                height: 20px;
+                                            }
+                                            
+                                            .logo h1 {
+                                                font-size: 20px;
+                                                color: rgb(0, 0, 0);
+                                                padding-top: 6px;
+                                                align-items: baseline;
+                                            }
+                                            
+                                            .menu {
+                                                display: flex;
+                                            }
+                                            
+                                            .menu li {
+                                                margin-left: 50px;
+                                                position: relative;
+                                                list-style: none;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                transition: 0.5s;
+                                            }
+                                            
+                                            .menu li a {
+                                                color: #51380a;
+                                                transition: 0.5s;
+                                                font-size: 17px;
+                                                padding-bottom: 0px;
+                                            }
+                                            
+                                            .menu li a:hover {
+                                                color: #6d6d6d;
+                                                font-size: 20px;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .menu li:hover::after {
+                                                content: "";
+                                                position: absolute;
+                                                height: 30px;
+                                                z-index: -1;
+                                                width: 30px;
+                                                background-color: #f2f2f2;
+                                                border-radius: 50%;
+                                            }
+                                            
+                                            .page-main {
+                                                display: block;
+                                                width: 85%;
+                                                margin: auto;
+                                                margin-top: 100px;
+                                            }
+                                            
+                                            .notre-histoire {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                margin-bottom: 100px;
+                                            }
+                                            
+                                            .notre-histoire>img {
+                                                width: 900px;
+                                                align-self: center;
+                                                border-radius: 20px;
+                                            }
+                                            
+                                            .notre-histoire>.texte {
+                                                width: 900px;
+                                                margin-left: 20px;
+                                            }
+                                            
+                                            .notre-histoire h1 {
+                                                margin-left: 0px;
+                                                margin-bottom: 50px;
+                                                font-size: 35px;
+                                            }
+                                            
+                                            .notre-histoire p {
+                                                text-align: justify;
+                                                font-size: 20px;
+                                                margin-top: 20px;
+                                            }
+                                            
+                                            .separator {
+                                                height: 3px;
+                                                background-color: #5c410f;
+                                                width: 100%;
+                                                margin: 20px 0;
+                                            }
+                                            
+                                            .engagements {
+                                                margin-bottom: 100px;
+                                            }
+                                            
+                                            .title-category {
+                                                text-align: center;
+                                                margin-bottom: 10px;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .picture-engagements {
+                                                width: 100%;
+                                                height: 500px;
+                                                background-image: url("Photos/bla.png");
+                                                background-position: center;
+                                                background-size: cover;
+                                                object-fit: cover;
+                                                object-position: center;
+                                                border-radius: 5px;
+                                                position: relative;
+                                            }
+                                            
+                                            .infos-picture-engagements {
+                                                width: 100%;
+                                                height: 100%;
+                                                z-index: 2;
+                                                color: white;
+                                                background-image: linear-gradient(( 0, 0, 1), (0, 0, 0, 0));
+                                                border-radius: 5px;
+                                            }
+                                            
+                                            .picture-engagements-text {
+                                                position: absolute;
+                                                bottom: 0;
+                                                margin: 10px;
+                                                color: white;
+                                                text-decoration: solid;
+                                            }
+                                            
+                                            .missions {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                margin-bottom: 100px;
+                                            }
+                                            
+                                            .missions>img {
+                                                width: 800px;
+                                                align-self: center;
+                                                border-radius: 20px;
+                                                margin-right: 30px;
+                                            }
+                                            
+                                            .missions>text {
+                                                margin-left: 20px;
+                                                font-size: 50px;
+                                            }
+                                            
+                                            .missions h1 {
+                                                margin-left: 0px;
+                                                margin-bottom: 50px;
+                                            }
+                                            
+                                            .mission>p {
+                                                text-align: justify;
+                                                font-size: 20px;
+                                                margin-top: 20px;
+                                                width: 80%;
+                                            }
+                                            
+                                            .developpement {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .developpement h1 {
+                                                font-size: 40px;
+                                                margin-bottom: 30px;
+                                            }
+                                            
+                                            .developpement p {
+                                                margin-top: 10px;
+                                                width: 95%;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .developpement img {
+                                                width: 50%;
+                                                /* Ajustez la largeur de l'image selon vos besoins */
+                                                margin-left: 20px;
+                                                margin-top: 20px;
+                                                /* Marge à gauche pour l'image */
+                                            }
+                                            
+                                            .mise-au-point {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .mise-au-point h1 {
+                                                font-size: 40px;
+                                                margin-bottom: 30px;
+                                            }
+                                            
+                                            .mise-au-point p {
+                                                margin-top: 10px;
+                                                width: 100%;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .mise-au-point img {
+                                                width: 50%;
+                                                /* Ajustez la largeur de l'image selon vos besoins */
+                                                margin-right: 20px;
+                                                /* Marge à gauche pour l'image */
+                                            }
+                                            
+                                            .fabrication {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .fabrication h1 {
+                                                font-size: 40px;
+                                                margin-bottom: 30px;
+                                            }
+                                            
+                                            .fabrication p {
+                                                margin-top: 10px;
+                                                width: 100%;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .fabrication img {
+                                                width: 70%;
+                                                /* Ajustez la largeur de l'image selon vos besoins */
+                                                margin-right: 85px;
+                                                margin-left: 30px;
+                                                /* Marge à gauche pour l'image */
+                                            }
+                                            
+                                            .produit-fini {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .produit-fini img {
+                                                width: 50%;
+                                                /* Ajustez la largeur de l'image selon vos besoins */
+                                                margin-left: 157px;
+                                                margin-right: 20px;
+                                                /* Marge à gauche pour l'image */
+                                            }
+                                            
+                                            .produit-fini h1 {
+                                                font-size: 40px;
+                                                margin-bottom: 30px;
+                                            }
+                                            
+                                            .produit-fini p {
+                                                margin-top: 10px;
+                                                width: 87%;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            input:not(input [type="submit"]),
+                                            textarea {
+                                                border: none;
+                                                border-bottom: 2px solid rgba(74, 9, 9, 0.678);
+                                                resize: none;
+                                                outline: none;
+                                                font-family: "Montserrat";
+                                                width: 30vw;
+                                                margin-bottom: 20px;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            label {
+                                                margin-bottom: 10px;
+                                                font-weight: 600;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .form-top {
+                                                display: flex;
+                                                flex-direction: row;
+                                                position: relative;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .form-left * {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .form-left>* {
+                                                display: block;
+                                            }
+                                            
+                                            .form-right * {
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .button[type="submit"] {
+                                                background-color: #5c410f;
+                                                border-radius: 20px;
+                                                border: none;
+                                                padding: 10px;
+                                                font-weight: 600;
+                                                font-size: 20px;
+                                                color: white;
+                                                font-family: "Montserrat";
+                                                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                                                margin-bottom: 80px;
+                                                cursor: pointer;
+                                                transition: transform 0.5s ease-in-out;
+                                            }
+                                            
+                                            .button[type="submit"]:hover {
+                                                transform: translateY(-5px);
+                                            }
+                                            
+                                            footer {
+                                                background-color: #8f661a;
+                                                padding: 20px;
+                                                text-align: center;
+                                                height: 150px;
+                                                position: relative;
+                                                width: 100%;
+                                                margin-bottom: 0;
+                                            }
+                                            
+                                            .footer-content {
+                                                display: flex;
+                                                justify-content: space-around;
+                                            }
+                                            
+                                            .footer-content div {
+                                                width: 30%;
+                                            }
+                                            
+                                            .footer-content h3 {
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .social-media img {
+                                                width: 40px;
+                                                margin: 5px;
+                                            }
+                                            
+                                            .contact-footer {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                /* Ajout de la marge intérieure pour l'espacement */
+                                            }
+                                            
+                                            .contact-info>div {
+                                                display: flex;
+                                                align-items: center;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .contact-info .tel {
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .contact-info .gmail {
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .contact-info img {
+                                                margin: 5px;
+                                                width: 40px;
+                                            }
+                                            
+                                            .contact-footer h3 {
+                                                margin-bottom: 5px;
+                                            }
+                                            
+                                            .localisation {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                /* Ajout de la marge intérieure pour l'espacement */
+                                            }
+                                            
+                                            .loc-info {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .loc-info img {
+                                                margin: 5px;
+                                                width: 40px;
+                                            }
+                                            
+                                            .localisation h3 {
+                                                margin-bottom: 5px;
+                                            }
+                                            
+                                            body {
+                                                overflow-x: hidden;
+                                                /* Désactive tout défilement */
+                                            }
+ /* Ajustez la largeur de l'image selon vos besoins */
+
+                                             @media screen and (min-width: 319px) and (max-width: 406px) {
+                                                 header {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    background-color: rgb(255, 255, 255);
+                                                    top: 0;
+                                                    /* Placez-le tout en haut */
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 40px;
+                                                    background-color: #bbbbbb;
+                                                }
+                                                .logo {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                .logo img {
+                                                    width: 30px;
+                                                    height: 15px;
+                                                    margin-left: 0;
+                                                }
+                                                .logo h1 {
+                                                    font-size: 5px;
+                                                    color: rgb(0, 0, 0);
+                                                    padding-top: 10px;
+                                                    align-items: baseline;
+                                                }
+                                                .menu {
+                                                    display: flex;
+                                                }
+                                                .menu li {
+                                                    margin-left: 15px;
+                                                    position: relative;
+                                                    list-style: none;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    transition: 0.5s;
+                                                }
+                                                .menu li a {
+
+                                                    margin-bottom: 0;
+                                                    color: #51380a;
+                                                    transition: 0.5s;
+                                                    font-size: 5px;
+                                                    padding-bottom: 0px;
+                                                }
+                                                .menu li a:hover {
+                                                    color: #6d6d6d;
+                                                    font-size: 14px;
+                                                    cursor: pointer;
+                                                }
+                                                .menu li:hover::after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    height: 30px;
+                                                    z-index: -1;
+                                                    width: 30px;
+                                                    background-color: #f2f2f2;
+                                                    border-radius: 50%;
+                                                }
+                                                .page-main {
+                                                    display: block;
+                                                    width: 95%;
+                                                    margin: auto;
+                                                    margin-top: 10px;
+                                                }
+
+                                        
+                                                .notre-histoire {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .notre-histoire>.texte {
+                                                    width: initial;
+                                                }
+                                                .notre-histoire h1 {
+                                                    text-align: center;
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:30px;
+                                                }
+                                                .notre-histoire p {
+                                                    text-align: justify;
+                                                    font-size: 11.5px;
+                                                    margin-top: 0px;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .notre-histoire>img {
+                                                    width: 320px;
+                                                    align-self: center;
+                                                    border-radius: 20px;
+                                                }
+                                                .separator {
+                                                    height: 2px;
+                                                    background-color: #5c410f;
+                                                    width: 100%;
+                                                    margin-top: 0px ;
+                                                    
+                                                }
+                                                .picture-engagements {
+                                                    width: 100%;
+                                                    height: 250px;
+                                                    background-image: url("Photos/bla.png");
+                                                    background-position: center;
+                                                    background-size: cover;
+                                                    object-fit: cover;
+                                                    object-position: center;
+                                                    border-radius: 5px;
+                                                    position: relative;
+                                                }
+                                                .infos-picture-engagements {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: 2;
+                                                    color: white;
+                                                    background-image: linear-gradient(( 0, 0, 1), (0, 0, 0, 0));
+                                                    border-radius: 5px;
+                                                }
+                                                
+                                                .picture-engagements-text {
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    margin: 10px;
+                                                    color: white;
+                                                    text-decoration: solid;
+                                                    font-size:12px;
+                                                }
+                                                
+                                                .missions {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    margin-bottom: 100px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .missions h1 {
+                                                    text-align: center;
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:20px;
+                                                }
+                                                .missions h4 {
+                                                    
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:15px;
+                                                }
+                                                .missions>img {
+                                                    width: 100%;
+                                                    align-self: center;
+                                                    border-radius: 20px;
+                                                    margin-right: 0px;
+                                                    margin-top: 10px;
+                                                }
+                                                .missions>text {
+                                                    margin-left: 20px;
+                                                    font-size: 1px;
+                                                }
+                                                .missions p {
+                                                    text-align: justify;
+                                                    font-size: 12px;
+                                                    margin-top: 20px;
+                                                    width: 100%;
+                                                }
+                                                 .mission h2 {
+                                                    font-size: 18px;
+                                                 }
+
+                                               
+                                                .developpement {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .developpement h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .developpement p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                    margin-bottom: 10px;
+                                                }
+                                                .developpement img {
+                                                    border-radius: 20px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-left: 0px;
+                                                    margin-top: 10px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .mise-au-point {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column-reverse;
+                                                }
+                                                .mise-au-point h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .mise-au-point p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                }
+                                                .mise-au-point img {
+                                                    border-radius: 20px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .fabrication {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                }
+                                                .fabrication h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .fabrication p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                }
+                                                .fabrication img {
+                                                    border-radius: 20px;
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    margin-left: 0px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .produit-fini {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column-reverse;
+                                                }
+                                                .produit-fini img {
+                                                    border-radius: 20px;
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    margin-left: 0px;
+                                                }
+                                                .produit-fini h1 {
+                                                    font-size: 20px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .produit-fini p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 15px;
+                                                }
+                                                footer {
+                                                    background-color: #8f661a;
+                                                    padding-top: 5px;
+                                                    text-align: center;
+                                                    height: 90px;
+                                                    position: relative;
+                                                    width: 100%;
+                                                    margin-bottom: 0;
+                                                }
+                                                .footer-content {
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                }
+                                                .footer-content div {
+                                                    width: 100%;
+                                                }
+                                                .footer-content h3 {
+                                                    margin-bottom: 10px;
+                                                    font-size: 9px;
+                                                }
+                                                .social-media img {
+                                                    width: 20px;
+                                                    margin: 5px;
+                                                }
+                                                .contact-footer {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    /* Ajout de la marge intérieure pour l'espacement */
+                                                }
+                                                .contact-info>div {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                }
+                                                .contact-info .tel {
+                                                    flex-direction: row;
+                                                }
+                                                .contact-info .gmail {
+                                                    flex-direction: row;
+                                                }
+                                                .contact-info .gmail p {
+                                                    font-size: 10px;
+                                                    margin-right: 0;
+                                                }
+                                                .contact-info .tel p {
+                                                    font-size: 10px;
+                                                    margin-right: 0;
+                                                }
+                                                .contact-info .tel img {
+                                                    margin: 5px;
+                                                    width: 15px;
+                                                    margin-left: 7.6px;
+                                                }
+                                                .contact-info  img {
+                                                    margin: 5px;
+                                                    width: 20px;
+                                                }
+                                                .contact-footer h3 {
+                                                    margin-bottom: 5px;
+                                                    
+                                                }
+                                                .localisation {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    /* Ajout de la marge intérieure pour l'espacement */
+                                                }
+                                                .loc-info {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                .loc-info p {
+                                                    font-size: 10px;
+                                                }
+                                                .loc-info img {
+                                                    margin: 5px;
+                                                    width: 15px;
+                                                }
+                                                .localisation h3 {
+                                                    margin-bottom: 5px;
+                                                }
+                                            }
+/* zpeofAjustez la largeur de l'image selon vos besoins */
+
+                                            @media screen and (min-width: 406px) and (max-width: 550px) {
+                                                header {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    background-color: rgb(255, 255, 255);
+                                                    top: 0;
+                                                    /* Placez-le tout en haut */
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 40px;
+                                                    background-color: #bbbbbb;
+                                                }
+                                                .logo {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                .logo img {
+                                                    width: 30px;
+                                                    height: 15px;
+                                                    margin-left: 0;
+                                                }
+                                                .logo h1 {
+                                                    font-size: 9px;
+                                                    color: rgb(0, 0, 0);
+                                                    padding-top: 10px;
+                                                    align-items: baseline;
+                                                }
+                                                .menu {
+                                                    display: flex;
+                                                }
+                                                .menu li {
+                                                    margin-left: 15px;
+                                                    position: relative;
+                                                    list-style: none;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    transition: 0.5s;
+                                                }
+                                                .menu li a {
+
+                                                    margin-bottom: 0;
+                                                    color: #51380a;
+                                                    transition: 0.5s;
+                                                    font-size: 7.6px;
+                                                    padding-bottom: 0px;
+                                                }
+                                                .menu li a:hover {
+                                                    color: #6d6d6d;
+                                                    font-size: 14px;
+                                                    cursor: pointer;
+                                                }
+                                                .menu li:hover::after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    height: 30px;
+                                                    z-index: -1;
+                                                    width: 30px;
+                                                    background-color: #f2f2f2;
+                                                    border-radius: 50%;
+                                                }
+                                                .page-main {
+                                                    display: block;
+                                                    width: 95%;
+                                                    margin: auto;
+                                                    margin-top: 10px;
+                                                }
+
+                                        
+                                                .notre-histoire {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .notre-histoire>.texte {
+                                                    width: initial;
+                                                }
+                                                .notre-histoire h1 {
+                                                    text-align: center;
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:20px;
+                                                }
+                                                .notre-histoire p {
+                                                    text-align: justify;
+                                                    font-size: 11.5px;
+                                                    margin-top: 0px;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .notre-histoire>img {
+                                                    width: 320px;
+                                                    align-self: center;
+                                                    border-radius: 20px;
+                                                }
+                                                .separator {
+                                                    height: 2px;
+                                                    background-color: #5c410f;
+                                                    width: 100%;
+                                                    margin-top: 0px ;
+                                                    
+                                                }
+                                                .picture-engagements {
+                                                    width: 100%;
+                                                    height: 250px;
+                                                    background-image: url("Photos/bla.png");
+                                                    background-position: center;
+                                                    background-size: cover;
+                                                    object-fit: cover;
+                                                    object-position: center;
+                                                    border-radius: 5px;
+                                                    position: relative;
+                                                }
+                                                .infos-picture-engagements {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: 2;
+                                                    color: white;
+                                                    background-image: linear-gradient(( 0, 0, 1), (0, 0, 0, 0));
+                                                    border-radius: 5px;
+                                                }
+                                                
+                                                .picture-engagements-text {
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    margin: 10px;
+                                                    color: white;
+                                                    text-decoration: solid;
+                                                    font-size:12px;
+                                                }
+                                                
+                                                .missions {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: center;
+                                                    margin-bottom: 100px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .missions h1 {
+                                                    text-align: center;
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:20px;
+                                                }
+                                                .missions h4 {
+                                                    
+                                                    margin-bottom: 10px;
+                                                    margin-bottom: 20px;
+                                                    font-size:15px;
+                                                }
+                                                .missions>img {
+                                                    width: 100%;
+                                                    align-self: center;
+                                                    border-radius: 20px;
+                                                    margin-right: 0px;
+                                                    margin-top: 10px;
+                                                }
+                                                .missions>text {
+                                                    margin-left: 20px;
+                                                    font-size: 1px;
+                                                }
+                                                .missions p {
+                                                    text-align: justify;
+                                                    font-size: 12px;
+                                                    margin-top: 20px;
+                                                    width: 100%;
+                                                }
+                                                
+                                                .developpement {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                }
+                                                .developpement h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .developpement p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                    margin-bottom: 10px;
+                                                }
+                                                .developpement img {
+                                                    border-radius: 20px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-left: 0px;
+                                                    margin-top: 10px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .mise-au-point {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column-reverse;
+                                                }
+                                                .mise-au-point h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .mise-au-point p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                }
+                                                .mise-au-point img {
+                                                    border-radius: 20px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .fabrication {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                }
+                                                .fabrication h1 {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .fabrication p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 12px;
+                                                }
+                                                .fabrication img {
+                                                    border-radius: 20px;
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    margin-left: 0px;
+                                                    /* Marge à gauche pour l'image */
+                                                }
+                                                .produit-fini {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column-reverse;
+                                                }
+                                                .produit-fini img {
+                                                    border-radius: 20px;
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    /* Ajustez la largeur de l'image selon vos besoins */
+                                                    margin-right: 0px;
+                                                    margin-left: 0px;
+                                                }
+                                                .produit-fini h1 {
+                                                    font-size: 20px;
+                                                    margin-bottom: 10px;
+                                                    margin-top: 20px;
+                                                }
+                                                .produit-fini p {
+                                                    margin-top: 10px;
+                                                    width: 100%;
+                                                    font-size: 15px;
+                                                }
+                                                footer {
+                                                    background-color: #8f661a;
+                                                    padding-top: 5px;
+                                                    text-align: center;
+                                                    height: 90px;
+                                                    position: relative;
+                                                    width: 100%;
+                                                    margin-bottom: 0;
+                                                }
+                                                .footer-content {
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                }
+                                                .footer-content div {
+                                                    width: 100%;
+                                                }
+                                                .footer-content h3 {
+                                                    margin-bottom: 10px;
+                                                    font-size: 9px;
+                                                }
+                                                .social-media img {
+                                                    width: 20px;
+                                                    margin: 5px;
+                                                }
+                                                .contact-footer {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    /* Ajout de la marge intérieure pour l'espacement */
+                                                }
+                                                .contact-info>div {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                }
+                                                .contact-info .tel {
+                                                    flex-direction: row;
+                                                }
+                                                .contact-info .gmail {
+                                                    flex-direction: row;
+                                                }
+                                                .contact-info .gmail p {
+                                                    font-size: 10px;
+                                                    margin-right: 0;
+                                                }
+                                                .contact-info .tel p {
+                                                    font-size: 10px;
+                                                    margin-right: 0;
+                                                }
+                                                .contact-info .tel img {
+                                                    margin: 5px;
+                                                    width: 15px;
+                                                    margin-left: 7.6px;
+                                                }
+                                                .contact-info  img {
+                                                    margin: 5px;
+                                                    width: 20px;
+                                                }
+                                                .contact-footer h3 {
+                                                    margin-bottom: 5px;
+                                                    
+                                                }
+                                                .localisation {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    /* Ajout de la marge intérieure pour l'espacement */
+                                                }
+                                                .loc-info {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                .loc-info p {
+                                                    font-size: 10px;
+                                                }
+                                                .loc-info img {
+                                                    margin: 5px;
+                                                    width: 15px;
+                                                }
+                                                .localisation h3 {
+                                                    margin-bottom: 5px;
+                                                }
+                                            }
